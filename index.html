@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>数钱项目</title>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<!--如果是移动端项目,需要使用viewport做屏幕适配-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+	</head>
+	<body>
+		<!--预加载界面-->
+		<div id="loadingwrap">
+			<div id="loading">0%</div>
+		</div>
+		<!--数钱项目的第一个界面-->
+		<div id="page1">
+			<!--挑战的图片-->
+			<img id="challenge" class="animated bounceIn"  src="img/tiaozhan.png" 
+				alt="" />
+			<!--你的数钱速度图片-->
+			<img id="winSlogan" class="animated wobble" src="img/yingqu.png"
+				 alt="" />
+			<!--开始挑战的按钮-->
+			<img id="start" src="img/start_game.png"
+			  class="animated pulse infinite"	/>
+			  <!--✋ 用户引导-->
+			  <img id="hand" class="animated fadeOut infinite" src="img/shou.png"/>
+			  <!--按钮切换图片-->
+			  <img class="button_bg" src="img/p1_btns_wrap.png" alt="" />
+			  <!--数钱榜按钮图片-->
+			  <img class="rank" src="img/ranking.png" alt="" />
+			  <!--活动规则按钮-->
+			  <img class="rule" src="img/activity_rule.png" alt="" />
+			  <!--活动奖品按钮-->
+			  <img class="prize" src="img/prize.png"/>
+			  <!--奖券使用说明按钮-->
+			  <img class="explain" src="img/shiyong.png" alt="" />
+		</div>
+		<!--第二个界面-->
+		<div id="page2">
+			<!--对话框-->
+			<img id="outline" src="img/p2_kuang.png"/>
+			<!--对话框里面的内容-->
+			<img id="textTalk" src="img/p2_txt1.png" alt="" />
+			<!--设置数钱数和时间模块-->
+			<div id="time">
+				<span class="count_num">0</span>
+				<span class="count_num">0</span>
+				<span class="count_num">0</span>
+				<span class="time_clock">10</span>
+			</div>
+			<!--数钱  滑动的钱-->
+			<div id="money_wrap">
+				<img id="money" src="img/p2_qian.jpg" alt="" />
+			</div>
+			<!--数钱的手-->
+			<img id="handMoney"  class="animated fadeOutUp infinite"
+				src="img/p2_shou.png" alt="" />
+		    <!--砖块-->
+		    <img id="brick" src="img/p2_zhuan.png" alt="" />
+		</div>
+		<!--第三个界面-->
+		<div id="page3">
+			<!--恭喜你已获得图片-->
+			<img id="acquire" src="img/p3_acquire.png" alt="" />
+			<!--游戏结束获得的钱-->
+			<p id="resultMoney">¥0</p>
+			<!--战果-->
+			<p id="resultEva">没有办法,你已经超神了!</p>
+			<!--设置最好成绩和当前排名-->
+			<div id="best_wrap">
+				我的辉煌战绩:¥999,当前排名:66名
+			</div>
+			<!--再来一次按钮-->
+			<img id="again" src="img/p3_again.png" alt="" />
+			<!--土豪一次按钮-->
+			<img id="share" src="img/p3_share_btn.png" alt="" />
+			<!--按钮切换图片-->
+			  <img class="button_bg" src="img/p1_btns_wrap.png" alt="" />
+			  <!--数钱榜按钮图片-->
+			  <img class="rank" src="img/ranking.png" alt="" />
+			  <!--活动规则按钮-->
+			  <img class="rule" src="img/activity_rule.png" alt="" />
+			  <!--活动奖品按钮-->
+			  <img class="prize" src="img/prize.png"/>
+			  <!--奖券使用说明按钮-->
+			  <img class="explain" src="img/shiyong.png" alt="" />
+		</div>
+		<!--1.填写个人资料界面-->
+		<div class="alert-wrap" id="user-wrap">
+			<!--关闭个人资料的按钮-->
+			<img class="close" src="img/close.png" alt="" />
+			<!--使用form表单-->
+			<form id="form-alert"  action="" method="post">
+				<input id="username" type="text" 
+					placeholder="姓名" />
+				<input id="phone" type="text" 
+					placeholder="电话" />
+				<input id="address" type="text" 
+					placeholder="地址" />	
+			<!--提交按钮-->
+			<input id="submit" type="button"  />
+			</form>
+		</div>
+	<!--数钱榜提示框-->	
+	<div class="alert-wrap" id="rank-alert">
+		<!--数钱榜提示框的关闭按钮-->
+		<img class="close" src="img/close.png" alt="" />
+		<!--排名模块-->
+		<div id="rank-wrap">
+			<ul>
+				<li>
+					<span class="rankGrade"></span>
+					<img class="p-clock" 
+						src="img/shizhong.png" alt="" />
+					<span class="name">暂无</span>	
+					<span class="score">0分</span>
+				</li>
+				<li>
+					<span class="rankGrade"></span>
+					<img class="p-clock" 
+						src="img/shizhong.png" alt="" />
+					<span class="name">暂无</span>	
+					<span class="score">0分</span>
+				</li>
+				<li>
+					<span class="rankGrade"></span>
+					<img class="p-clock" 
+						src="img/shizhong.png" alt="" />
+					<span class="name">暂无</span>	
+					<span class="score">0分</span>
+				</li>
+				<li>
+					<span class="rankGrade">4</span>
+					<img class="p-clock" 
+						src="img/shizhong.png" alt="" />
+					<span class="name">暂无</span>	
+					<span class="score">0分</span>
+				</li>
+				<li>
+					<span class="rankGrade">5</span>
+					<img class="p-clock" 
+						src="img/shizhong.png" alt="" />
+					<span class="name">暂无</span>	
+					<span class="score">0分</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!--3.活动规则提示框-->
+	<div class="alert-wrap" id="rlue-alert">
+		<!--活动规则提示框的关闭按钮-->
+		<img class="close" src="img/close.png" alt="" />
+		<div class="content-wrap">
+			<h1>活动规则</h1>
+			<p>
+				1、每人有多次游戏机会，但成绩只能提交一次，且提交之后不能更改！<br /> 
+					2、提交成绩时要提供姓名及手机号码作为兑奖凭证，因用户本人未在规定时间内提供正确的手机号码造成的奖品损失，由用户个人承担。 <br />
+					3、活动时间为2016年5月11日-5月19日24:00，活动结束后将在“雾灵山庄”微信公布中奖名单。<br />
+					4、获奖规则：系统将根据大家提交的成绩，按照由多到少的规则进行排行，排名第1的网友将获得一等奖，排名第2-第21位的网友将分获二等奖，以此类推。 <br />
+					5、奖品的发放：活动结束后，将由工作人员与您取得联系，并将相应的卡券编号发送到您提供的手机号码上。
+			</p>
+		</div>
+	</div>
+	<!--4.活动奖品-->
+	<div class="alert-wrap" id="prize-alert">
+		<!--活动奖品提示框的关闭按钮-->
+		<img class="close" src="img/close.png" alt="" />
+		<div class="content-wrap">
+			<h1>活动奖品</h1>
+			<p>
+				一等奖1人：价值1488元7号楼1晚豪华标间免费房券1张，并可享康体项目3折优惠；<br /><br />
+					二等奖20人：100元订房代金券每人1张，并可享康体项目4折优惠；<br /><br />
+					三等奖50人：50元订房代金券每人1张，并可享康体项目5折优惠。<br /><br />
+					奖品的有效期：2016年5月20日至6月15日（周五、周六及法定节假日不可用）
+			</p>
+		</div>
+	</div>
+	<!--5.奖券使用说明-->
+	<div class="alert-wrap" id="explain-alert">
+		<!--奖券使用说明提示框的关闭按钮-->
+		<img class="close" src="img/close.png" alt="" />
+		<div class="content-wrap">
+			<h1>奖券使用说明</h1>
+			<p>
+				1、每人有多次游戏机会，但成绩只能提交一次，且提交之后不能更改！<br />
+					2、提交成绩时要提供姓名及手机号码作为兑奖凭证，因用户本人未在规定时间内提供正确的手机号码造成的奖品损失，由用户个人承担。<br />
+					3、活动时间为2016年5月11日-5月19日24:00，活动结束后将在“雾灵山庄”微信公布中奖名单。<br />
+					4、获奖规则：系统将根据大家提交的成绩，按照由多到少的规则进行排行，排名第1的网友将获得一等奖，排名第2-第21位的网友将分获二等奖，以此类推。<br />
+					5、奖品的发放：活动结束后，将由工作人员与您取得联系，并将相应的卡券编号发送到您提供的手机号码上。<br />
+
+			</p>
+		</div>
+	</div>
+	<!--6.分享-->
+	<div id="share-wrap" class="alert-wrap">
+		<img src="img/p3_share.png" alt="" />
+	</div>
+	
+	</body>
+	<script src="js/jquery-3.1.0.min.js">
+		
+	</script>
+	<script src="js/touch.min.js">
+		
+	</script>
+	<script src="js/index.js">
+		
+	</script>
+	
+</html>
